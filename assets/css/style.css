@@ -1,0 +1,32 @@
+body {
+    background-image: url("../images/wp2062228.jpg");
+}
+header {
+    color: White;
+}
+.player {
+    margin: 10px;
+    float: left;
+    height: 150px;
+    width: 130px;
+    border: solid 5px purple;
+    background-color: white;
+    color: navy;
+    text-align: center;
+}
+.enemy {
+    background-color: red;
+}
+h2 {
+    color: purple;
+}
+img {
+    height: 80px;
+    margin: 10px;
+}
+.play-area {
+    height: 175px;
+}
+.attackee {
+    background-color: green;
+}
