@@ -11,45 +11,71 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:300" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
 <body>
  <header>
-     <h1>Game of Thrones Battle</h1>
- <header>
+     <img src="assets/images/generatedtext.png">
+ </header>
 <div class="container">
-     <div class="row">
-         <div class="col-md-12 play-area" id="players">
+    <div class="row">
+         <div class="col-md-8">
+                <div class="container"> 
+                    <div class="row">     
+                        <div class="col-md-9 play-area" id="players">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 game-play" id="status">
+            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 play-area" id="enemies">
+                                
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 play-area game-play" id="enemy-info">
+                    </div>
+                    <div class="row">   
+                    <button type="button" class="btn btn-danger btn-lg">Attack</button>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-md-9 game-play" id="game-info">
+            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9" id="attackee">
+            
+                        </div>
+                    </div>
+                </div> 
+        </div>
+        
+        <div class="col-md-4">
+            <div class="col-md-5" id="card">
+                <div class="card" style="width: 22rem;">
+                    <img id="throne-pic" src="assets/images/non-feat-new_1400x933.jpg" class="card-img-top" alt="throne">
+                    <div class="card-body">
+                    <p class="card-text">Welcome to the Seven Kingdoms. Select your character. Then fight your way to the Iron Throne. As you fight you character will gain power. Fight your enemies in the correct order to rule all of Westeros...</p>
+                    </div>
     
-         </div>
-         <div class="col-md-12" id="gameInfo">
-             <h2>Your Character</h2>
-         </div>
-     </div>
-     <div class="row">
-        <div class="col-md-12 play-area" id="enemies">
-            
-        </div>
-    <div class="col-md-12 play-area" id="gameInfo">
-            <h2>Enemies Available to Attack</h2>
-            <button type="button" class="btn btn-danger">Attack</button>
-        </div>
-
-    <div class="row">
-        <div class="col-md-12" id="attackee">
-            
+                    </div>
+                </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12" id="status">
-            
-        </div>
-    </div>
-    </div>
-</div>   
-
-
+</div>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
     
 </body>
 </html>

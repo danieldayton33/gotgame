@@ -1,32 +1,55 @@
+*{
+    font-family: 'Merriweather', serif;}
 body {
-    background-image: url("../images/wp2062228.jpg");
+    background-image: url("../images/gameofthrones30.jpg");
 }
 header {
-    color: White;
+    text-align: center;
+    padding: 30px;
 }
 .player {
     margin: 10px;
     float: left;
     height: 150px;
     width: 130px;
-    border: solid 5px purple;
-    background-color: white;
-    color: navy;
+    border: solid 5px darkslategray;
+    background-color: black;
+    color: whitesmoke;
     text-align: center;
 }
+/* .play-area {
+    float: left;
+} */
 .enemy {
-    background-color: red;
+    background-color: darkred;
 }
-h2 {
-    color: purple;
+.game-play {
+    color: darkslategray;
 }
-img {
+.player-pic {
     height: 80px;
     margin: 10px;
 }
-.play-area {
-    height: 175px;
-}
+/* .play-area {
+    height: 140px;
+} */
 .attackee {
-    background-color: green;
+    background-color: forestgreen;
+}
+#status, #game-info, #enemy-info  {
+    color: darkslategray;
+    font-size: 20px;
+}
+#throne-pic {
+    height: 200px;
+}
+.card {
+    text-align: center;
+    border: darkslategray solid 5px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    color: gray;
+}
+#attack-button {
+    align-items: center;
 }
