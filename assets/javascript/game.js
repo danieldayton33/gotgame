@@ -76,12 +76,23 @@ function addPlayerDiv(char){
     
 }
 $(document).ready(function() {
+
 function gameStart (){
 for(var i = 0; i < playerArr.length; i++){
     addPlayerDiv(playerArr[i])
 }
     selectFighter();
 }
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "assets/images/01 Game of Thrones Theme.m4a");
+
+// Theme Button
+$(".theme-button").on("click", function() {
+  audioElement.play();
+});
+$(".pause-button").on("click", function() {
+  audioElement.pause();
+});
 gameStart();
 
 function selectFighter() {
@@ -177,53 +188,4 @@ $(".enemy").on("click", function() {
         }
     
 });   
-       
-       
-        // if($("#enemy").hasClass(".john")) {
-        //     attackeeAttack = johnSnow.attackPower;
-        //     attackPower = johnSnow.hitPoints;
-        // }
-        // if($("#enemy").hasClass(".jamie")) {
-        //     attackeeAttack = jamieLannister.attackPower;
-        //     attackPower = jamieLannister.hitPoints;
-        // }
-        // if($("#enemy").hasClass(".night")) {
-        //     attackeeAttack = nightKing.attackPower;
-        //     attackPower = nightKing.hitPoints;
-        // }
-        // if($("#enemy").hasClass(".khal")) {
-        //     attackeeAttack = khalDrogo.attackPower;
-        //     attackPower = khalDrogo.hitPoints;
-        // }
-        // if($("#players").hasClass(".john")) {
-        //     johnSnow.attack();
-        // }
-        // if($("#players").hasClass(".jamie")) {
-        //     jamieLannister.attack();
-        // }
-        // if($("#players").hasClass(".night")) {
-        //     nightKing.attack();
-        // }
-        // if($("#players").hasClass(".khal")) {
-        //     khalDrogo.attack();
-        // }
- 
-//     }
-//     if(characterBio[i].status === "attackee") {
-//         attackeeHitPoints = characterBio[i].hitPoints;
-//         attackeeAttack = characterBio[i].attackPower;
-//         attackeeIndex = i;
-//     }
-// }
-// fighterHitPoints -= attackeeAttack;
-// attackeeHitPoints -= fighterAttack;
-
-// characterBio[fighterIndex].hitPoints = fighterHitPoints;
-// characterBio[attackeeIndex].hitPoints = attackeeHitPoints;
-
-// // updateStats();
-
-
-// });
-// }
   
